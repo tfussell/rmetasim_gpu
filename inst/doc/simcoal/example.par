@@ -1,0 +1,25 @@
+//Parameters for the coalescence simulation program : simcoal.exe
+1 samples to simulate : Exponential growth : 1000 to 100,000,000 started 3000 generations ago
+//Population effective sizes (number of genes 2*diploids)
+100
+//Samples sizes (number of genes 2*diploids)
+25
+//Growth rates	: negative growth implies population expansion
+0
+//Number of migration matrices : 0 implies no migration between demes
+0	
+//historical event: time, source, sink, migrants, new deme size, new growth rate, migration matrix index
+0 historical event //Stop growth
+//Number of independent loci [chromosome] (Number of sequences of 300 bp per gamete)
+2 1
+// Chromosome structure 1 begins with number of loci
+2
+//per block: data type, number of loci, per generation recombination and mutation rates and optional parameters
+SNP    10        0.000      0.0000
+DNA    10        0.000      0.0000    0.33  // Chromosome structure 1 begins with number of loci  
+// Chromosome structure 2 begins with number of loci
+3
+//per block: data type, number of loci, per generation recombination and mutation rates and optional parameters
+SNP    10        0.000      0.000
+DNA    10        0.000      0.00025    0.33
+SNP    10        0.000      0.000    
